@@ -21,7 +21,7 @@
     --color-gray-400: hsl(var(--gray-hue), 16%, 41%);
     --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
     --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
-
+    --lfweek-primary: #000000;
 
     /* Container Width */
 
@@ -41,7 +41,7 @@ body {
     color: var(--color-gray-200);
     line-height: 1.7;
     overflow-x: hidden;
-    background: var(--color-gray-600);
+    background: var(--lfweek-primary);
 }
 
 .container {

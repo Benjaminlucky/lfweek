@@ -2,6 +2,9 @@ import { Link, Router } from 'react-router-dom'
 import {footerAbout} from './footerData'
 import { QuickLinks } from './footerData'
 import { socialHandles } from './footerData'
+import { contactDetails } from './footerData'
+import {ImLocation2} from 'react-icons/im'
+import {MdPhoneCallback} from 'react-icons/md'
 import './footer.css'
 
 const Footer = () => {
@@ -42,6 +45,20 @@ const Footer = () => {
                     })
                 }
                 </div>
+
+                <h3 className="socialmedia__contact">Contact Details</h3>
+                
+                    {
+                        contactDetails.map(({id, address, tel1, tel2,}) => {
+                            return(
+                                <div key={id} className="contact__details">
+                                    <div className="address"><span><ImLocation2/></span><p className='address__main'>{address}</p></div>
+                                    <p className='tel'><span><MdPhoneCallback/></span>{tel1}</p>
+                                </div>
+                            )
+                        })
+                    }
+            
             </div>
         </div>
     )

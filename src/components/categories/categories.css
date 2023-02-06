@@ -67,7 +67,15 @@
     transition: all .5s ease;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 300px) {
+
+    .container-category {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1000px) {
 
     .container-category {
         width: 100vw;

@@ -1,4 +1,4 @@
-import Logo from '../../images/logo.png'
+import Logo from '../../images/lsfweekLogoPurple.png'
 import {ImFacebook} from 'react-icons/im'
 import {ImTwitter} from 'react-icons/im'
 import {BsInstagram} from 'react-icons/bs'
@@ -39,5 +39,14 @@ export const socialHandles = [
     {
         icon: <BsInstagram/>,
         path: "https://www.instagram.com/",
+    }
+]
+
+export const contactDetails = [
+    {
+        id: 1,
+        address: "Suite D244, road one, Ikota Complex, near VGC,  Lekki, Lagos Nigeria.",
+        tel1: "09060005567, 08093932288",
+        tel2: "08093932288"
     }
 ]

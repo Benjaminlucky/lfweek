@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import Logo from '../images/logo.png'
+import Logo from '../images/lfsLogo.png'
 import {links} from '../data'
 import './navbar.css'
 import {GoThreeBars} from 'react-icons/go'

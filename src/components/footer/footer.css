@@ -2,7 +2,7 @@
 
 .footer__container {
     width: 100vw;
-    height: 50vh;
+    /*height: 50vh;*/
 }
 
 .footer__wrapper {
@@ -29,7 +29,7 @@
 }
 
 .footer__logo {
-    width: 7rem;
+    width: 20rem;
 }
 
 .footer__details {
@@ -75,10 +75,10 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 2px solid transparent;
     color: var(--color-secondary);
     transition: all .5s ease;
@@ -96,7 +96,52 @@
 }
 
 
-@media screen and (min-width: 300px) {
+.socialmedia__contact {
+    margin-top: 2rem;
+    color: var(--color-secondary);
+}
+
+.contact__details {
+    margin-top: .5rem;
+}
+
+
+.address {
+    display: flex;
+}
+
+.address span {
+    font-size: 2rem;
+    padding-right: .5rem;
+    color: #fff;
+}
+
+
+
+.address__main {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+}
+
+
+.tel span {
+    color: #fff;
+    font-size: 2rem;
+    padding-right: .5rem;
+}
+
+
+.tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+
+
+
+
+@media screen and (max-width: 300px) {
     .footer__container {
         display: flex;
         flex-direction: column;
@@ -109,7 +154,6 @@
 
     .footer__wrapper {
         padding-bottom: 3rem;
-        padding-top: -8rem;
     }
 
     .footer-col-3 {
@@ -119,5 +163,67 @@
 
     .links {
         text-align: center;
+    }
+} 
+
+@media screen and (max-width: 700px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 3rem;
+        margin-top: 15rem;
+        margin-bottom: -10rem;
+    }
+
+    .footer__wrapper {
+        padding-bottom: 7rem;
+        padding-top: -8rem;
+        margin-top: -1rem;
+    }
+
+    .footer-col-3 {
+        padding-bottom: 3rem;
+       margin-inline: auto;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .footer__logo {
+        width: 15rem;
+        margin-inline: auto;
+        margin-bottom: .2rem;
+    }
+
+    .footer__details {
+        text-align: center;
+        margin-top: .1rem;
+    }
+
+    .footer-col-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+
+    .socialmedia__contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+
+    .contact__details {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
 } 

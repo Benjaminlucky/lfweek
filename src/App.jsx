@@ -5,6 +5,7 @@ import About from './pages/about/about'
 import Contact from './pages/contact/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/footer/Footer'
+import FooterBottom from './components/footerBottom/footerBottom'
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path='Contact' element={<Contact/>} />
             </Routes>
             <Footer />
+            <FooterBottom />
        </BrowserRouter>
     )
 }

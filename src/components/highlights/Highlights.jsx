@@ -10,11 +10,11 @@ const Highlights = () => {
     return (
         <div className="container highlight__container">
             {
-                highlight.map(({id, icon, title, desc}, ) =>  {
+                highlight.map(({id, img, title, desc}, ) =>  {
                     return (
                         <div className="highlight__content">
                             <div key={id} className="highlight">
-                                <span className="highlight__icon">{icon}</span>
+                                <img src={img} alt="hights" className="highlight__image" />
                                 <h3 className="highlight__title">{title}</h3>
                                 <p className="highlight__desc">{desc}</p>
                             </div>
