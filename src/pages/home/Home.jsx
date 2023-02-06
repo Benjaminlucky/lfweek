@@ -11,6 +11,7 @@ function Home() {
       <Highlights />
       <Aboutinfo />
       <Categories />
+
     </>
   )
 }

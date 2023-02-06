@@ -1,0 +1,123 @@
+
+
+.footer__container {
+    width: 100vw;
+    height: 50vh;
+}
+
+.footer__wrapper {
+    width: 80vw;
+    margin-inline: auto;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.footer-col-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-col-1__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__logo {
+    width: 7rem;
+}
+
+.footer__details {
+    font-size: 1rem;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.quicklinks {
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    padding-left: 3rem;
+}
+
+.links {
+    color: rgba(255, 255, 255, 0.6);
+    transition: all .5s ease;
+}
+
+.footer-col-2__content {
+    padding-left: 3rem;
+}
+
+.links:hover {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.socialmedia {
+    color: var(--color-secondary);
+}
+
+
+.social__content {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.social__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    color: var(--color-secondary);
+    transition: all .5s ease;
+}
+
+.social__links svg {
+    color: var(--color-secondary);
+}
+
+.social__links:hover {
+    background-color: transparent;
+    color: var(--color-secondary) ;
+    border: 2px solid #fff;
+    transition: all .5 ease;
+}
+
+
+@media screen and (min-width: 300px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 3rem;
+        margin-top: 15rem;
+        margin-bottom: -10rem;
+    }
+
+    .footer__wrapper {
+        padding-bottom: 3rem;
+        padding-top: -8rem;
+    }
+
+    .footer-col-3 {
+        padding-bottom: 3rem;
+       margin-inline: auto;
+    }
+
+    .links {
+        text-align: center;
+    }
+} 

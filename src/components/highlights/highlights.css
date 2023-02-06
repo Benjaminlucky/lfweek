@@ -53,13 +53,18 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) {
     .highlight__container {
         flex-direction: column;
+        margin-top: -4rem;
+        padding-top: -4rem;
     }
+
+    .highlight__content {
+        margin-top: 0;
+    }
+
 }
-
-
 @media screen and (max-width: 768) {
     .highlight__content {
         column-gap: 4rem;

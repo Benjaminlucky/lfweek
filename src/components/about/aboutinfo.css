@@ -3,7 +3,6 @@
     background-color: rgba(255,255,255, 0.1);
     margin-top: 6rem;
     width: 100vw;
-    height: 100vh;
 }
 
 .about__wrapper {
@@ -43,4 +42,21 @@
 .about__image:hover {
     filter: saturate(0);
     transition: all .7s ease;
+}
+
+@media screen and (min-width: 300px) {
+    .about__wrapper {
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 3rem;
+    }
+
+    
+    .aboutinfo__container {
+        background-color: rgba(255,255,255, 0.1);
+        margin-top: 3rem;
+        width: 100vw;
+    }
+
+
 }

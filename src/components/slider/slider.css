@@ -104,7 +104,10 @@ p {
     z-index: 2;
 }
 
-
+.video{
+    width: 100vw;
+    height: auto;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -121,15 +124,31 @@ p {
     }
 
     .mySwiper {
-        height: 100vh;
+        height: 30vh;
         z-index: -1!important;
         position: relative;
+        margin-bottom: -80%;
+        padding: -20%;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 60%;
+        left: 0;
     }
 
     .slide {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: -3%;
+        padding-bottom: -30%;
+
+    }
+
+    .swiperWrapper {
+        margin-bottom: 60%;
     }
 
     .slide > img {
@@ -161,12 +180,95 @@ p {
         text-align: center;
         left: 0;
     }
+
+    .video {
+        /*height: 100vh;*/
+        margin-top: -82%;
+        margin-bottom: 20%;
+        padding: 0;
+    }
+
+
+    .mySwiper {
+        height: 20vh;
+        z-index: -1!important;
+        position: relative;
+        padding: -10%;
+    }
+
+    .swiper-pagination {
+        color: var(--color-secondary);
+        position: absolute;
+        top: 70%;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination {
+        top: 30%;
+        margin-bottom: -10%;
+    }
 }
 
 
+@media screen and (min-width: 300px) {
+    .slide {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -3%;
+        padding-bottom: -20%;
+
+    }
+
+    
+    .video {
+        /*height: 100vh;*/
+        margin-top: -52%;
+        margin-bottom: -30%;
+        padding: 0;
+    }
+
+    .mySwiper {
+        height: 100vh;
+        z-index: -1!important;
+        position: relative;
+    }
+}
+@media screen and (min-width: 300px) {
+    .slide {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -3%;
+        padding-bottom: -30%;
+
+    }
+
+    
+    .video {
+        /*height: 100vh;*/
+        margin-top: -52%;
+        margin-bottom: -55%;
+        padding: 0;
+    }
+
+    .mySwiper {
+        height: 100vh;
+        z-index: -1!important;
+        position: relative;
+    }
+}
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 700px) {
     @keyframes textAnimate {
         0% {
             transform: scale(0);
@@ -189,6 +291,40 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+
+    .video {
+        height: 100vh;
+        margin-top: -30%;
+        margin-bottom: -30%;
+        padding: 0;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .mySwiper {
+        height: 50vh;
+        z-index: -1!important;
+        position: relative;
+    }
+
+    .mySwiper {
+        height: 20vh;
+        z-index: -1!important;
+        position: relative;
+        padding: -10%;
+    }
+
+    .swiper-pagination {
+        color: var(--color-secondary);
+        position: absolute;
+        top: 70%;
     }
 
     .slide > img {
@@ -235,6 +371,12 @@ p {
         pointer-events: auto;
         z-index: 2;
         margin-top: 1rem;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 60%;
+        left: 0;
     }
 
 }
@@ -312,5 +454,19 @@ p {
 
     p {
         font-size: 1.5rem;
+    }
+
+    .slide {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -3%;
+        padding-bottom: -20%;
+
+    }
+
+    .swiperWrapper {
+        margin-bottom: -20%;
     }
 }
